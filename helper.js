@@ -3,7 +3,7 @@ const cheerio = require("cheerio")
 
 exports.computeSeasonalityScore = function(arr){
       if(arr.length == 0) return null
-
+           this is here to test the workflow checks
     let counter = 0;
     arr.forEach((seas)=>{
         if(seas) counter++
