@@ -11,7 +11,7 @@ app.post("/api/food", async function(req, res){
     let ingred = req.body.ingredients, jsonbuilder = {}, seasonalities = []
     jsonbuilder['foods'] = []
     jsonbuilder['err'] = []
-    this should break the code
+    
     for(let i = 0; i < ingred.length; i++){
         try {
             console.log(ingred[i])
@@ -43,7 +43,7 @@ app.post("/api/link", async function(req, res){
   let result = await getResults(req.body.cur)
   res.json({result})
 })
-this should break the code
+
 
 app.use(function(req, res, next){
     let err = new Error('Not Found')
